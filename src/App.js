@@ -3,7 +3,7 @@ import './App.css'
 import Todolist from './Todolist';
 const App = () => {
 
-  const [inputList, setInputList] = useState("buy apple");
+  const [inputList, setInputList] = useState("");
   const [Item, setItem] = useState([]);
 
   const itemEvent = (event) => {

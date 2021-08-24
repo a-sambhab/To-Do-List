@@ -39,24 +39,26 @@
   border-bottom: 2px solid #8566aa;
   outline: none;
 }
-.add{
+/* .add{
   min-height: 40px;
   width: 40px;
   border-radius: 50%;
   border-color: transparent;
   background-color: #8566aa;
-  color: #fff;
+  color: #8566aa;
   font-size: x-large;
   border: none;
   outline: none;
-  margin-left: 10px;
+  margin: 10px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
   transition: all 0.2s ease-in-out;
 }
 .add:hover{
   background-color: #20bf6b;
+} */
+.add:hover{
+  background-color: #20bf6b;
 }
-
 .class_div ol{
   background: transparent;
   text-decoration: none;
@@ -65,7 +67,7 @@
   flex-direction: column;
   margin: 30px;
   justify-content: center;
-  align-items: center;
+  align-items: left;
 }
 .class_div li{
   padding-left: 0;
@@ -76,6 +78,7 @@
   align-items: center;
   justify-content: center;
   color: #8566aa;
+  margin: 5px 10px;
   text-transform: capitalize;
 }
 .todo-list{
@@ -84,13 +87,13 @@
   margin: 5px;
 }
 .delete{
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   padding: 0%;
-  border-radius: 50%;
+  border-radius: 20%;
   border-color: transparent;
-  background-color: #8566aa;
-  color: #fff;
+  background-color: #fff;
+  color: #8566aa;
   margin: 2.5px;
   /* font-size: medium; */
   border: none;
@@ -101,4 +104,5 @@
 }
 .delete:hover{
   background-color: rgb(241, 65, 65);
+  color: #fff;
 }

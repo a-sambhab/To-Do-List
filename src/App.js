@@ -1,6 +1,19 @@
 import React, {useState} from 'react';
 import './App.css'
+import Button from '@material-ui/core/Button';
 import Todolist from './Todolist';
+import AddIcon from '@material-ui/icons/Add';
+import { withStyles } from '@material-ui/styles';
+const StyledButton = withStyles({
+  root: {
+    backgroundColor: '#3c52b2',
+    color: '#fff',
+    '&:hover': {
+      backgroundColor: '#fff',
+      color: '#3c52b2',
+  },
+}})(Button);
+
 const App = () => {
 
   const [inputList, setInputList] = useState("");
@@ -31,7 +44,7 @@ const App = () => {
           <h1>ToDo List</h1>
           <br/>
           <input type="text" placeholder="Add a Item" value={inputList} onChange={itemEvent} />
-          <button className="add" onClick={listOfItems}> + </button>
+          <StyledButton style={{backgroundColor:"#8566aa", color:"white", margin:"10px"}} className="add" onClick={listOfItems}> <AddIcon /> </StyledButton>
 
           <ol>
             {Item.map((item, index) => {
